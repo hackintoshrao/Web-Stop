@@ -1,4 +1,4 @@
-var showMap;
+var map=null;
 
 var ourCoords = { 
 	latitude:13.3500 ,
@@ -10,12 +10,12 @@ window.onload = getLocation ;
 function showMap(coords) {
 	var googleLatAndLong = new google.maps.LatLng(coords.latitude,coords.longitude);
 	var mapOptions	= {
-		zoom:10, 
-		centre:googleLatAndLong ,
-		mapTypeId:google.maps.MapTypeId.ROADMAP	
+		zoom: 20, 
+		center: googleLatAndLong ,
+		mapTypeId: google.maps.MapTypeId.ROADMAP	
 	};
 	var mapDiv = document.getElementById("map");
-	map = new google.mps.Map(mapDiv,mapOptions);
+	map = new google.maps.Map(mapDiv,mapOptions);
 }
 
 
