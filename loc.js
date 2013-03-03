@@ -12,7 +12,7 @@ function showMap(coords) {
 	var mapOptions	= {
 		zoom: 10, 
 		center: googleLatAndLong ,
-		mapTypeId: google.maps.MapTypeId.ROADMAP	
+		mapTypeId: google.maps.MapTypeId.HYBRID	
 	};
 	var mapDiv = document.getElementById("map");
 	map = new google.maps.Map(mapDiv,mapOptions);
